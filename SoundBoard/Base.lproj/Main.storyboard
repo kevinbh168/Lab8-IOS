@@ -39,6 +39,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ng8-0D-xsR" id="O1o-Hk-QE4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +65,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foT-JB-239">
                                 <rect key="frame" x="192" y="158" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="ofs-7D-Xff" eventType="touchUpInside" id="6vs-zh-q92"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpr-ua-q6e">
                                 <rect key="frame" x="107" y="208" width="200" height="30"/>
@@ -75,6 +81,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb7-rX-LWr">
                                 <rect key="frame" x="192" y="258" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="ofs-7D-Xff" eventType="touchUpInside" id="5dg-bh-S0s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,13 +101,14 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="Vb7-rX-LWr" id="6Gl-Z4-gYe"/>
+                        <outlet property="nameTextField" destination="wpr-ua-q6e" id="g79-Jq-WOj"/>
                         <outlet property="playButton" destination="foT-JB-239" id="O5D-DU-ZX3"/>
                         <outlet property="recordButton" destination="2vi-gm-6iD" id="eLi-tW-AtR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aea-Ye-cGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="-559"/>
+            <point key="canvasLocation" x="1695.6521739130435" y="-559.15178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jMd-0L-wQ4">
